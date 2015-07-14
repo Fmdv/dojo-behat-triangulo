@@ -1,0 +1,14 @@
+default:
+  translation:
+    locale: pt
+  extensions:
+    Behat\MinkExtension:
+      default_session: goutte
+      javascript_session: selenium2
+      goutte: ~
+      selenium2:
+        capabilities:
+          proxy:
+            proxyType: 'manual'
+            httpProxy: 'proxy.devel:8180'
+            sslProxy: 'proxy.devel:8180'
